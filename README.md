@@ -1,2 +1,3 @@
 # Settings
-.zshrc, .vimrc
+- `.zshrc`
+- `.vimrc`
