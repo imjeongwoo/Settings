@@ -10,6 +10,9 @@ brew --version && \
 brew install tree jq tmux ipmitool kubectl
 brew install --cask iterm2 google-chrome visual-studio-code
 
+brew tap adoptopenjdk/openjdk && \
+brew install --cask adoptopenjdk11
+
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
