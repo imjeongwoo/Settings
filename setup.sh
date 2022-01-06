@@ -16,6 +16,10 @@ brew install --cask adoptopenjdk11
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# zsh-plugin
+brew install zsh-syntax-highlighting && \
+echo "source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${HOME}/.zshrc
+
 
 # iterm2-colorscheme
 cd ~
