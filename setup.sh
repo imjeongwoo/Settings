@@ -7,8 +7,8 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 brew --version && \
-brew install tree jq tmux ipmitool kubectl
-brew install --cask iterm2 google-chrome visual-studio-code
+brew install tree jq tmux ipmitool kubectl wget
+brew install --cask iterm2 google-chrome visual-studio-code docker wireshark virtualbox
 
 brew tap adoptopenjdk/openjdk && \
 brew install --cask adoptopenjdk11

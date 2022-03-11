@@ -1,8 +1,11 @@
-# call plug#begin('~/.vim/plugged')
-# call plug#end()
+"call plug#begin('~/.vim/plugged')
+"  Plug 'wojciechkepka/vim-github-dark'
+"  Plug 'preservim/nerdtree'
+"  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+"call plug#end()
 
 filetype plugin indent on
-color codedark
+color jellybeans
 
 set mouse=a
 set showmatch       " 매칭 괄호 하이라이팅
@@ -21,6 +24,7 @@ set ignorecase		" 검색 시 대소문자 무시
 set ruler			" 커서 위치 표시
 set ls=2			" 항상 상태바 표시
 set et
+set clipboard=unnamedplus
 
 " tab
 set ts=4			" '\t'문자를 몇 칸으로 보여줄지
@@ -34,3 +38,6 @@ set bs=indent,eol,start
 if has("syntax")
  syntax on
 endif
+
+
+nmap nerd :NERDTreeToggle<CR>
