@@ -1,0 +1,3 @@
+Host gcp-server
+    User limjeong1219
+    IdentityFile /Users/kakao/.ssh/gcp_rsa

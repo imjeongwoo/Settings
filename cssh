@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ ! -z $1 ]; then
+    sudo cat "$HOME/config/private_ssh.txt" | sudo tee "$HOME/.ssh/config" && \
+    echo -e "\n개인용 SSH 설정"
+    exit 0
+else
+    sudo cat "$HOME/config/company_ssh.txt" | sudo tee "$HOME/.ssh/config" && \
+    echo -e "\n업무용 SSH 설정"
+fi
