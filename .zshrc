@@ -105,4 +105,16 @@ source <(kubectl completion zsh)
 export LANG=en_US.UTF-8
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+#--------- alias
+alias python="python3"
+alias h="history"
 alias dsleep="pmset displaysleepnow"
+alias kinit="kinit kai.lim"
+alias dnsflush="sudo killall -HUP mDNSResponder"
+alias kk="kdestroy;kinit"
+alias gs="chssh 1; ssh gcp-server"
+alias gate="kinit; ssh kai@infra-sys-gate"
+#--------- function
+lgkill() {
+    kill -HUP $(ps -ef | grep 'Logi Options' | grep -v grep | awk '{print $2}');
+}
