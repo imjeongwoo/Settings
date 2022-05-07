@@ -3,3 +3,4 @@ Host *
     GSSAPIAuthentication yes
     PreferredAuthentications gssapi-with-mic,password
     StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
